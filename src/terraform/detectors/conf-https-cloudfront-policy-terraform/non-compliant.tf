@@ -33,7 +33,7 @@ resource "aws_cloudfront_distribution" "cf" {
     allowed_methods        = []
     cached_methods         = []
     target_origin_id       = ""
-    # Non Compliant: `viewer_protocol_policy` is set to `allow-all`.
+    # Noncompliant: `viewer_protocol_policy` is set to `allow-all`.
     viewer_protocol_policy = "allow-all"
   }
   restrictions {
